@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+    <script>
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        // let myDiv = React.createElement("div", {id:"qwerty", class:"haina"}, "hello world");
+        // let heading = React.createElement("h1", {class:"hello"}, "hey");
+
+        // root.render([myDiv,heading])  // react is able to render array of react elements
+
+        // const parent = React.createElement("div", null, React.createElement("p", null, "Hello from p tag"));
+
+        // const ul = React.createElement("ul", null, [
+        //     React.createElement("li", null, "apple"),
+        //     React.createElement("li", null, "bat"),
+        //     React.createElement("li", null, "cat"),
+        // ]);
+        // root.render([parent,ul]);
+
+        
+        let logo = React.createElement("h3",null,"LOGO");
+        let anchor = React.createElement("div", null, [
+            React.createElement("a", null,"A"),
+            React.createElement("a", null,"B"),
+            React.createElement("a", null,"C")
+        ])
+         
+        let nav = React.createElement("div",{style: {display:"flex", flexDirection:"row", justifyContent:"space-between"}},[logo,anchor])
+
+        root.render(nav)
+
+
+    </script>
+</body>
+</html>

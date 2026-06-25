@@ -1,0 +1,59 @@
+body{
+  background-color: #121212;
+}
+
+#main{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:200px;
+  flex-direction: column; */
+  height:fit-content;
+  width:fit-content;
+  padding:20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 25px;
+
+  /* box-shadow: 0 10px 30px rgba(255,255,255,0.1); */
+}
+
+ 
+
+button{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  border:none;
+  margin:8px;
+}
+
+#box{
+  
+  width:fit-content;
+  
+}
+
+
+#operand{
+  background-color: rgb(255, 157, 10);
+  color:white;
+  font-size: 26px;
+  font-weight:bold ;
+}
+
+#upBtn{
+  background-color:rgb(166,166,166);
+  font-weight:bold;
+  font-size:26px
+}
+
+#numBtn{
+  background-color: rgb(51,51,51);
+  color:white;
+  font-weight: bold;
+  font-size: 26px;
+}
